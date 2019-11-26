@@ -67,25 +67,25 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="117.85714285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="7R4-62-aWy">
             <objects>
-                <viewController id="lHD-BS-ZMx" sceneMemberID="viewController">
+                <viewController id="lHD-BS-ZMx" customClass="DetailViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1kZ-xN-7qV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksz-i7-kk9">
-                                <rect key="frame" x="140" y="306" width="128" height="96"/>
+                                <rect key="frame" x="20" y="143" width="374" height="269"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="87"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz5-iV-DfF">
-                                <rect key="frame" x="80" y="448" width="218" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz5-iV-DfF">
+                                <rect key="frame" x="20" y="420" width="374" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -94,6 +94,10 @@
                         <viewLayoutGuide key="safeArea" id="IbA-Ed-7Ob"/>
                     </view>
                     <navigationItem key="navigationItem" id="JTL-nX-XV3"/>
+                    <connections>
+                        <outlet property="desctiptionLabel" destination="hz5-iV-DfF" id="o33-Fj-ZoK"/>
+                        <outlet property="tempLabel" destination="Ksz-i7-kk9" id="Stb-SG-Pbo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1a-rM-9zH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,11 +122,11 @@
             </objects>
             <point key="canvasLocation" x="-22" y="792"/>
         </scene>
-        <!--Item-->
+        <!--Weather-->
         <scene sceneID="tTh-gh-2uE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ynv-n8-LBH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="DXY-36-Wfd"/>
+                    <tabBarItem key="tabBarItem" title="Weather" image="cloud.sun" catalog="system" id="DXY-36-Wfd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8BH-6b-G6g">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -153,11 +157,11 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="791.51785714285711"/>
         </scene>
-        <!--Item-->
+        <!--Color-->
         <scene sceneID="v21-7L-01r">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pqz-SC-8dr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="tmY-TY-XE5"/>
+                    <tabBarItem key="tabBarItem" title="Color" image="paintbrush" catalog="system" id="tmY-TY-XE5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jru-wa-S27">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -188,11 +192,11 @@
             </objects>
             <point key="canvasLocation" x="1958" y="1521"/>
         </scene>
-        <!--Item-->
+        <!--User-->
         <scene sceneID="u1h-9P-eUh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kWi-cJ-Y5S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="krV-iy-XXU"/>
+                    <tabBarItem key="tabBarItem" title="User" image="person.circle" catalog="system" id="krV-iy-XXU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Heb-Er-HHG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -208,4 +212,9 @@
             <point key="canvasLocation" x="1048" y="1521"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloud.sun" catalog="system" width="64" height="44"/>
+        <image name="paintbrush" catalog="system" width="64" height="64"/>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
+    </resources>
 </document>

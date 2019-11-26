@@ -25,6 +25,14 @@ class CitiesController: UIViewController {
         loadData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? DetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
+                         fatalError("failed to get indexPath and detailVC")
+                     }
+               
+               detailVC.city = cities[indexPath.row]
+    }
+
     func loadData() {
        cities = WeatherData.getCities()
     }
