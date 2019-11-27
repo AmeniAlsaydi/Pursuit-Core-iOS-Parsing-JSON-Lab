@@ -25,6 +25,14 @@ class UserController: UIViewController {
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? UserDetailController, let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("failed to get indexPath and detailVC")
+        }
+        
+        detailVC.user = users[indexPath.row]
+    }
+    
     func loadData() {
         users = RandomUserData.getRandomUsers()
     }

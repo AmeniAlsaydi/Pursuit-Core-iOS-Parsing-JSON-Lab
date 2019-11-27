@@ -23,6 +23,7 @@
 		B742AC9F238ED70900C4789C /* randomUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = B742AC9E238ED70900C4789C /* randomUserData.json */; };
 		B742ACA1238ED8AC00C4789C /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742ACA0238ED8AC00C4789C /* RandomUser.swift */; };
 		B742ACA3238EE01800C4789C /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742ACA2238EE01800C4789C /* UserController.swift */; };
+		B742ACA5238EF2F200C4789C /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742ACA4238EF2F200C4789C /* UserDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		B742AC9E238ED70900C4789C /* randomUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = randomUserData.json; sourceTree = "<group>"; };
 		B742ACA0238ED8AC00C4789C /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
 		B742ACA2238EE01800C4789C /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		B742ACA4238EF2F200C4789C /* UserDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				B742AC78238DAC3E00C4789C /* AppDelegate.swift */,
 				B742AC7A238DAC3E00C4789C /* SceneDelegate.swift */,
 				B742AC7C238DAC3E00C4789C /* ColorsController.swift */,
+				B742ACA4238EF2F200C4789C /* UserDetailController.swift */,
 				B742ACA2238EE01800C4789C /* UserController.swift */,
 				B742AC92238DDA9500C4789C /* CitiesController.swift */,
 				B742AC7E238DAC3E00C4789C /* Main.storyboard */,
@@ -175,6 +178,7 @@
 				B742AC7D238DAC3E00C4789C /* ColorsController.swift in Sources */,
 				B742ACA3238EE01800C4789C /* UserController.swift in Sources */,
 				B742AC9B238E27FB00C4789C /* Color.swift in Sources */,
+				B742ACA5238EF2F200C4789C /* UserDetailController.swift in Sources */,
 				B742AC79238DAC3E00C4789C /* AppDelegate.swift in Sources */,
 				B742AC9D238EAA8500C4789C /* ColorDetailController.swift in Sources */,
 				B742AC95238DE57100C4789C /* DetailViewController.swift in Sources */,
