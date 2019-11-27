@@ -24,6 +24,7 @@
 		B742ACA1238ED8AC00C4789C /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742ACA0238ED8AC00C4789C /* RandomUser.swift */; };
 		B742ACA3238EE01800C4789C /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742ACA2238EE01800C4789C /* UserController.swift */; };
 		B742ACA5238EF2F200C4789C /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742ACA4238EF2F200C4789C /* UserDetailController.swift */; };
+		B742ACA9238F2CE500C4789C /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742ACA8238F2CE500C4789C /* ImageClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		B742ACA0238ED8AC00C4789C /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
 		B742ACA2238EE01800C4789C /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		B742ACA4238EF2F200C4789C /* UserDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailController.swift; sourceTree = "<group>"; };
+		B742ACA8238F2CE500C4789C /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,26 +80,51 @@
 		B742AC77238DAC3E00C4789C /* Parsing_JSON_Lab */ = {
 			isa = PBXGroup;
 			children = (
-				B742AC8C238DAFA200C4789C /* weatherData.json */,
-				B742AC98238E256E00C4789C /* colorData.json */,
-				B742AC9E238ED70900C4789C /* randomUserData.json */,
-				B742AC9A238E27FB00C4789C /* Color.swift */,
-				B742ACA0238ED8AC00C4789C /* RandomUser.swift */,
-				B742AC8E238DBA3D00C4789C /* Weather.swift */,
+				B742ACAC238F3B0600C4789C /* RandomUser */,
+				B742ACAA238F3ABD00C4789C /* Color */,
+				B742ACAB238F3AE000C4789C /* Weather */,
 				B742AC78238DAC3E00C4789C /* AppDelegate.swift */,
 				B742AC7A238DAC3E00C4789C /* SceneDelegate.swift */,
-				B742AC7C238DAC3E00C4789C /* ColorsController.swift */,
-				B742ACA4238EF2F200C4789C /* UserDetailController.swift */,
-				B742ACA2238EE01800C4789C /* UserController.swift */,
-				B742AC92238DDA9500C4789C /* CitiesController.swift */,
 				B742AC7E238DAC3E00C4789C /* Main.storyboard */,
-				B742AC9C238EAA8500C4789C /* ColorDetailController.swift */,
-				B742AC94238DE57100C4789C /* DetailViewController.swift */,
 				B742AC81238DAC4100C4789C /* Assets.xcassets */,
 				B742AC83238DAC4100C4789C /* LaunchScreen.storyboard */,
 				B742AC86238DAC4100C4789C /* Info.plist */,
 			);
 			path = Parsing_JSON_Lab;
+			sourceTree = "<group>";
+		};
+		B742ACAA238F3ABD00C4789C /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				B742AC98238E256E00C4789C /* colorData.json */,
+				B742AC9A238E27FB00C4789C /* Color.swift */,
+				B742AC7C238DAC3E00C4789C /* ColorsController.swift */,
+				B742AC9C238EAA8500C4789C /* ColorDetailController.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		B742ACAB238F3AE000C4789C /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				B742AC8C238DAFA200C4789C /* weatherData.json */,
+				B742AC8E238DBA3D00C4789C /* Weather.swift */,
+				B742AC92238DDA9500C4789C /* CitiesController.swift */,
+				B742AC94238DE57100C4789C /* DetailViewController.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		B742ACAC238F3B0600C4789C /* RandomUser */ = {
+			isa = PBXGroup;
+			children = (
+				B742AC9E238ED70900C4789C /* randomUserData.json */,
+				B742ACA0238ED8AC00C4789C /* RandomUser.swift */,
+				B742ACA8238F2CE500C4789C /* ImageClient.swift */,
+				B742ACA2238EE01800C4789C /* UserController.swift */,
+				B742ACA4238EF2F200C4789C /* UserDetailController.swift */,
+			);
+			path = RandomUser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +207,7 @@
 				B742AC9B238E27FB00C4789C /* Color.swift in Sources */,
 				B742ACA5238EF2F200C4789C /* UserDetailController.swift in Sources */,
 				B742AC79238DAC3E00C4789C /* AppDelegate.swift in Sources */,
+				B742ACA9238F2CE500C4789C /* ImageClient.swift in Sources */,
 				B742AC9D238EAA8500C4789C /* ColorDetailController.swift in Sources */,
 				B742AC95238DE57100C4789C /* DetailViewController.swift in Sources */,
 				B742AC93238DDA9500C4789C /* CitiesController.swift in Sources */,

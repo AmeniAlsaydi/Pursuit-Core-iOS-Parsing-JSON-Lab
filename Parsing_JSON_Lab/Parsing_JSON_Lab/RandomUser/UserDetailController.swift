@@ -14,6 +14,8 @@ class UserDetailController: UIViewController {
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var dobLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     var user: User?
     
     override func viewDidLoad() {
@@ -52,8 +54,26 @@ class UserDetailController: UIViewController {
         } else {
           print("not a valid date")
         }
+        
+        imageView.layer.cornerRadius =
+            imageView.frame.size.width/2
+        imageView.clipsToBounds = true
+        imageView.layer.borderColor = UIColor.white.cgColor
+        imageView.layer.borderWidth = 10.0
        
         
+        if let largeImage = user?.picture.large {
+            ImageClient.fetchimage(for: largeImage) {[unowned self] (result) in
+                         switch result {
+                         case .failure(let error):
+                             print("error: \(error)")
+                         case .success(let image):
+                             DispatchQueue.main.async {
+                                self.imageView.image = image
+                             }
+                         }
+        }
     }
 
+}
 }

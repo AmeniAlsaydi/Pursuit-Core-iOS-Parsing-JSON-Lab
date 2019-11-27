@@ -18,7 +18,11 @@ struct User: Codable {
     let dob: DateInfo
     let phone: String
     let location: AddressInfo
+    let picture: picInfo
     
+}
+struct picInfo: Codable {
+    let large: String
 }
 
 struct Name: Codable  {
