@@ -52,7 +52,6 @@ extension CitiesController: UITableViewDataSource {
         
         cell.textLabel?.text = city.name
         cell.detailTextLabel?.text = "\(city.main.temp) C˚"
-        
         return cell
     }
     

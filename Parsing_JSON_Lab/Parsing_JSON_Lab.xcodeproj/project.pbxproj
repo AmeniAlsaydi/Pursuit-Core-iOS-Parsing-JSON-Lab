@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B742AC79238DAC3E00C4789C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742AC78238DAC3E00C4789C /* AppDelegate.swift */; };
 		B742AC7B238DAC3E00C4789C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742AC7A238DAC3E00C4789C /* SceneDelegate.swift */; };
-		B742AC7D238DAC3E00C4789C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742AC7C238DAC3E00C4789C /* ViewController.swift */; };
+		B742AC7D238DAC3E00C4789C /* ColorsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742AC7C238DAC3E00C4789C /* ColorsController.swift */; };
 		B742AC80238DAC3E00C4789C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B742AC7E238DAC3E00C4789C /* Main.storyboard */; };
 		B742AC82238DAC4100C4789C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B742AC81238DAC4100C4789C /* Assets.xcassets */; };
 		B742AC85238DAC4100C4789C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B742AC83238DAC4100C4789C /* LaunchScreen.storyboard */; };
@@ -17,13 +17,16 @@
 		B742AC8F238DBA3D00C4789C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742AC8E238DBA3D00C4789C /* Weather.swift */; };
 		B742AC93238DDA9500C4789C /* CitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742AC92238DDA9500C4789C /* CitiesController.swift */; };
 		B742AC95238DE57100C4789C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742AC94238DE57100C4789C /* DetailViewController.swift */; };
+		B742AC99238E256E00C4789C /* colorData.json in Resources */ = {isa = PBXBuildFile; fileRef = B742AC98238E256E00C4789C /* colorData.json */; };
+		B742AC9B238E27FB00C4789C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742AC9A238E27FB00C4789C /* Color.swift */; };
+		B742AC9D238EAA8500C4789C /* ColorDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742AC9C238EAA8500C4789C /* ColorDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B742AC75238DAC3E00C4789C /* Parsing_JSON_Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parsing_JSON_Lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B742AC78238DAC3E00C4789C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B742AC7A238DAC3E00C4789C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B742AC7C238DAC3E00C4789C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B742AC7C238DAC3E00C4789C /* ColorsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsController.swift; sourceTree = "<group>"; };
 		B742AC7F238DAC3E00C4789C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B742AC81238DAC4100C4789C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B742AC84238DAC4100C4789C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +35,9 @@
 		B742AC8E238DBA3D00C4789C /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		B742AC92238DDA9500C4789C /* CitiesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesController.swift; sourceTree = "<group>"; };
 		B742AC94238DE57100C4789C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B742AC98238E256E00C4789C /* colorData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colorData.json; sourceTree = "<group>"; };
+		B742AC9A238E27FB00C4789C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B742AC9C238EAA8500C4789C /* ColorDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +71,15 @@
 			isa = PBXGroup;
 			children = (
 				B742AC8C238DAFA200C4789C /* weatherData.json */,
+				B742AC98238E256E00C4789C /* colorData.json */,
+				B742AC9A238E27FB00C4789C /* Color.swift */,
 				B742AC8E238DBA3D00C4789C /* Weather.swift */,
 				B742AC78238DAC3E00C4789C /* AppDelegate.swift */,
 				B742AC7A238DAC3E00C4789C /* SceneDelegate.swift */,
-				B742AC7C238DAC3E00C4789C /* ViewController.swift */,
+				B742AC7C238DAC3E00C4789C /* ColorsController.swift */,
 				B742AC92238DDA9500C4789C /* CitiesController.swift */,
 				B742AC7E238DAC3E00C4789C /* Main.storyboard */,
+				B742AC9C238EAA8500C4789C /* ColorDetailController.swift */,
 				B742AC94238DE57100C4789C /* DetailViewController.swift */,
 				B742AC81238DAC4100C4789C /* Assets.xcassets */,
 				B742AC83238DAC4100C4789C /* LaunchScreen.storyboard */,
@@ -138,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B742AC85238DAC4100C4789C /* LaunchScreen.storyboard in Resources */,
+				B742AC99238E256E00C4789C /* colorData.json in Resources */,
 				B742AC82238DAC4100C4789C /* Assets.xcassets in Resources */,
 				B742AC80238DAC3E00C4789C /* Main.storyboard in Resources */,
 				B742AC8D238DAFA200C4789C /* weatherData.json in Resources */,
@@ -152,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B742AC8F238DBA3D00C4789C /* Weather.swift in Sources */,
-				B742AC7D238DAC3E00C4789C /* ViewController.swift in Sources */,
+				B742AC7D238DAC3E00C4789C /* ColorsController.swift in Sources */,
+				B742AC9B238E27FB00C4789C /* Color.swift in Sources */,
 				B742AC79238DAC3E00C4789C /* AppDelegate.swift in Sources */,
+				B742AC9D238EAA8500C4789C /* ColorDetailController.swift in Sources */,
 				B742AC95238DE57100C4789C /* DetailViewController.swift in Sources */,
 				B742AC93238DDA9500C4789C /* CitiesController.swift in Sources */,
 				B742AC7B238DAC3E00C4789C /* SceneDelegate.swift in Sources */,
