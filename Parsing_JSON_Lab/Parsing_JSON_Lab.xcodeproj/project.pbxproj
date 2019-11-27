@@ -20,6 +20,9 @@
 		B742AC99238E256E00C4789C /* colorData.json in Resources */ = {isa = PBXBuildFile; fileRef = B742AC98238E256E00C4789C /* colorData.json */; };
 		B742AC9B238E27FB00C4789C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742AC9A238E27FB00C4789C /* Color.swift */; };
 		B742AC9D238EAA8500C4789C /* ColorDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742AC9C238EAA8500C4789C /* ColorDetailController.swift */; };
+		B742AC9F238ED70900C4789C /* randomUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = B742AC9E238ED70900C4789C /* randomUserData.json */; };
+		B742ACA1238ED8AC00C4789C /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742ACA0238ED8AC00C4789C /* RandomUser.swift */; };
+		B742ACA3238EE01800C4789C /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742ACA2238EE01800C4789C /* UserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		B742AC98238E256E00C4789C /* colorData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colorData.json; sourceTree = "<group>"; };
 		B742AC9A238E27FB00C4789C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		B742AC9C238EAA8500C4789C /* ColorDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailController.swift; sourceTree = "<group>"; };
+		B742AC9E238ED70900C4789C /* randomUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = randomUserData.json; sourceTree = "<group>"; };
+		B742ACA0238ED8AC00C4789C /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
+		B742ACA2238EE01800C4789C /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +78,14 @@
 			children = (
 				B742AC8C238DAFA200C4789C /* weatherData.json */,
 				B742AC98238E256E00C4789C /* colorData.json */,
+				B742AC9E238ED70900C4789C /* randomUserData.json */,
 				B742AC9A238E27FB00C4789C /* Color.swift */,
+				B742ACA0238ED8AC00C4789C /* RandomUser.swift */,
 				B742AC8E238DBA3D00C4789C /* Weather.swift */,
 				B742AC78238DAC3E00C4789C /* AppDelegate.swift */,
 				B742AC7A238DAC3E00C4789C /* SceneDelegate.swift */,
 				B742AC7C238DAC3E00C4789C /* ColorsController.swift */,
+				B742ACA2238EE01800C4789C /* UserController.swift */,
 				B742AC92238DDA9500C4789C /* CitiesController.swift */,
 				B742AC7E238DAC3E00C4789C /* Main.storyboard */,
 				B742AC9C238EAA8500C4789C /* ColorDetailController.swift */,
@@ -147,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B742AC85238DAC4100C4789C /* LaunchScreen.storyboard in Resources */,
+				B742AC9F238ED70900C4789C /* randomUserData.json in Resources */,
 				B742AC99238E256E00C4789C /* colorData.json in Resources */,
 				B742AC82238DAC4100C4789C /* Assets.xcassets in Resources */,
 				B742AC80238DAC3E00C4789C /* Main.storyboard in Resources */,
@@ -163,11 +173,13 @@
 			files = (
 				B742AC8F238DBA3D00C4789C /* Weather.swift in Sources */,
 				B742AC7D238DAC3E00C4789C /* ColorsController.swift in Sources */,
+				B742ACA3238EE01800C4789C /* UserController.swift in Sources */,
 				B742AC9B238E27FB00C4789C /* Color.swift in Sources */,
 				B742AC79238DAC3E00C4789C /* AppDelegate.swift in Sources */,
 				B742AC9D238EAA8500C4789C /* ColorDetailController.swift in Sources */,
 				B742AC95238DE57100C4789C /* DetailViewController.swift in Sources */,
 				B742AC93238DDA9500C4789C /* CitiesController.swift in Sources */,
+				B742ACA1238ED8AC00C4789C /* RandomUser.swift in Sources */,
 				B742AC7B238DAC3E00C4789C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
