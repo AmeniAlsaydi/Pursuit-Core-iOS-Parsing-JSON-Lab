@@ -27,6 +27,12 @@ class UserDetailController: UIViewController {
         guard let theUser = user else {
             fatalError("theUser is nil, verify prepare for segue")
         }
+        
+        
+        nameLabel.text = "\(theUser.name.first) \(theUser.name.last)"
+        addressLabel.text = "Address: \(theUser.location.street.number) \(theUser.location.street.name) \(theUser.location.city), \(theUser.location.state) \(theUser.location.country) "
+        phoneLabel.text = "Phone Number: \(theUser.phone)"
+        
         // format date:
         let isoDateFormatter = ISO8601DateFormatter()
         isoDateFormatter.formatOptions = [.withInternetDateTime,
@@ -35,7 +41,6 @@ class UserDetailController: UIViewController {
                                           .withFractionalSeconds,
                                           .withColonSeparatorInTimeZone]
         isoDateFormatter.timeZone = TimeZone.current
-        // let timestamp = isoDateFormatter.string(from: Date()) 
     
         
         let timestampString = theUser.dob.date
@@ -44,14 +49,10 @@ class UserDetailController: UIViewController {
           dateFormatter.dateFormat = "MMMM, dd, yyyy h:mm a"
           let dateFormattedString = dateFormatter.string(from: date)
           dobLabel.text = "DOB: \(dateFormattedString)"
-            // print(dateFormattedString) // December, 09, 2018 11:08 AM
         } else {
           print("not a valid date")
         }
-        
-        nameLabel.text = "\(theUser.name.first) \(theUser.name.last)"
-        addressLabel.text = "Address: \(theUser.location.street.number) \(theUser.location.street.name) \(theUser.location.city), \(theUser.location.state) \(theUser.location.country) "
-        phoneLabel.text = "Phone Number: \(theUser.phone)"
+       
         
     }
 
